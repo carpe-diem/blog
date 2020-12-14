@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jugando a carpediem (Publicaciones sobre pyconar)</title><link>https://blog.paparelli.com.ar/</link><description></description><atom:link href="https://blog.paparelli.com.ar/categories/pyconar.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><copyright>Contents © 2019 &lt;a href="mailto:alberto@paparelli.com.ar"&gt;Alberto Paparelli (a.k.a. carpediem)&lt;/a&gt; 
+&lt;a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/"&gt;
+&lt;img alt="Creative Commons License BY-NC-SA"
+style="border-width:0; margin-bottom:12px;"
+src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"&gt;&lt;/a&gt;</copyright><lastBuildDate>Sat, 19 Oct 2019 04:19:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>PyCon-Ar 2014</title><link>https://blog.paparelli.com.ar/posts/pycon-ar-2014/</link><dc:creator>Alberto Paparelli (a.k.a. carpediem)</dc:creator><description>&lt;figure&gt;&lt;img src="https://blog.paparelli.com.ar/images/pycon2014.jpg"&gt;&lt;/figure&gt; &lt;div&gt;&lt;p&gt;Paso otra PyCon en Argentina, la sexta. Esta vez fue en Rafaela, Santa Fe.&lt;/p&gt;
+&lt;p&gt;Llegamos el Jueves a la tarde, por lo que ese día solo participe del sprint de la
+nueva web de pyar. Hice unos commits, pero no hubo mucho tiempo como para poder
+aportar mas.&lt;/p&gt;
+&lt;p&gt;El Viernes y Jueves fueron de charlas. Entre las que más me gustaron estan:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Tu propio cliente de Torrent streaming en Python (Por Felipe Lerena y Gilgameth)&lt;/li&gt;
+&lt;li&gt;Django Security quick-wins (Por Andrés Riancho)&lt;/li&gt;
+&lt;li&gt;Prediciendo el mundial con inteligencia artificial (Por Juan Pedro Fisanotti)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img alt="Foto grupal PyCon-AR 2014" class="align-center" src="https://blog.paparelli.com.ar/images/pyconar2014.jpg"&gt;
+&lt;p&gt;&lt;a href="https://blog.paparelli.com.ar/posts/pycon-ar-2014/"&gt;Leer más…&lt;/a&gt; (quedan 1 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>conferencia</category><category>pycon</category><category>pyconar</category><category>python</category><guid>https://blog.paparelli.com.ar/posts/pycon-ar-2014/</guid><pubDate>Mon, 17 Nov 2014 02:52:54 GMT</pubDate></item><item><title>PyCon-AR 2013</title><link>https://blog.paparelli.com.ar/posts/pycon-ar-2013/</link><dc:creator>Alberto Paparelli (a.k.a. carpediem)</dc:creator><description>&lt;div&gt;&lt;p&gt;El jueves 24 y viernes 25 de octubre estuve en Pycon Argentina. Este año se realizo en rosario y estuvo muy interesante.&lt;/p&gt;
+&lt;p&gt;Es el 5° año consecutivo que se realiza en Argentina. el Año pasado se realizo en Quilmes y pude participar ayudando en la organización.&lt;/p&gt;
+&lt;p&gt;Pueden ver las fotos en la &lt;a class="reference external" href="http://python.org.ar/Eventos/Conferencias/PyConAr2013"&gt;wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;img alt="Foto grupal PyCon-AR 2013" class="align-center" src="https://blog.paparelli.com.ar/images/pycon2013.jpg"&gt;
+&lt;p&gt;Entre las charlas que más me gustaron o me sirvieron están:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blog.paparelli.com.ar/posts/pycon-ar-2013/"&gt;Leer más…&lt;/a&gt; (quedan 1 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>conferencia</category><category>pycon</category><category>pyconar</category><category>python</category><guid>https://blog.paparelli.com.ar/posts/pycon-ar-2013/</guid><pubDate>Tue, 29 Oct 2013 14:24:06 GMT</pubDate></item></channel></rss>
