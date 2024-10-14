@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://blog.paparelli.com.ar"
+base_url = "https://blog.paparelli.com.ar/"
 title = "Alberto Paparelli - Blog"
 description = "Personal Blog"
 default_language = "en"
