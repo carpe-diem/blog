@@ -5,7 +5,6 @@ description = "Personal Blog"
 default_language = "en"
 
 theme = "no-style-please"
-
 generate_sitemap = true
 generate_feeds = true
 generate_robots_txt = true
@@ -48,6 +47,7 @@ include_content = true
 index_format = "elasticlunr_javascript"
 
 [extra]
+trailing_slash = true
 # Put all your custom variables here
 author = "Alberto Paparelli"
 list_pages = true
