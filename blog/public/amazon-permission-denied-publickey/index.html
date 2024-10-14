@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        
+        
+        
+
+        
+        
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+
+        <title>Permission denied en aws</title>
+        
+        <meta name="title" content="Permission denied en aws">
+        <meta name="author" content="Alberto Paparelli">
+        <meta name="description" content="Personal Blog">
+        <meta name="generator" content="Zola v0.16.1">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://blog.paparelli.com.ar/amazon-permission-denied-publickey/">
+        <meta property="og:site_name" content="Alberto Paparelli - Blog">
+        <meta property="og:title" content="Permission denied en aws">
+        <meta property="og:description" content="Personal Blog">
+        
+
+        
+        
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://blog.paparelli.com.ar/amazon-permission-denied-publickey/">
+        <meta property="twitter:title" content="Permission denied en aws">
+        <meta property="twitter:description" content="Personal Blog">
+        
+        
+        
+        <link rel="canonical" href="https://blog.paparelli.com.ar/amazon-permission-denied-publickey/">
+        
+        <script type="application/ld+json">
+            {
+                "description":"Personal Blog",
+                "url":"https://blog.paparelli.com.ar/amazon-permission-denied-publickey/",
+                "@type":"WebSite",
+                "headline":"Permission denied en aws",
+                "name":"Permission denied en aws",
+                "author":{
+                    "@type":"Person",
+                    "name":"Alberto Paparelli"
+                },
+                "@context":"https://schema.org"
+            }
+        </script>
+        
+        
+        
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://blog.paparelli.com.ar/atom.xml">
+        
+        
+        
+        <link rel="stylesheet" href="https://blog.paparelli.com.ar/style.css"/>
+        
+    </head>
+    <body theme="auto">
+        <div class="w">
+            <header>
+                
+                
+<p><a href="..">..</a>/amazon-permission-denied-publickey</p>
+<p class="post-meta"><time datetime="2013-11-04">2013-11-04</time></p>
+<h1>Permission denied en aws</h1>
+
+            </header>
+            <main class="page-content" aria-label="Content">
+                
+
+
+
+<p>El otro día tenía que hacer un deploy de una aplicación en el servidor de un cliente en amazon.
+Al intentar acceder por ssh, recibía como respuesta "Permission denied (publickey)".</p>
+<p>No podía acceder de ninguna otra manera. Tuve que hacer algunos pasos y pude solucionarlo.</p>
+<p>Mi problema era que alguien cambio los permisos del home, incluyendo el directorio ~/.ssh/.</p>
+<p>Les paso como lo solucione.</p>
+<ul>
+<li>Parar la instancia.</li>
+<li>Ir a Volumes, encontrar el disco de la instancia con problemas y poner "dettach".</li>
+<li>Si no tenes otra instancia, crear una micro instancia y poner attach volume.</li>
+</ul>
+<img class="invertable" src="&#x2F;images&#x2F;amazon-permission-denied-publickey.png" alt="Amazon Permission denied (publickey)" />
+<ul>
+<li>El disco ya esta montado en la nueva instancia, así que podes debugear hasta encontrar el problema.</li>
+<li>Dettach de la nueva instancia.</li>
+<li>Attach a la instancia vieja. En este caso, el punto de montaje debe ser /dev/sda1 (como estaba antes).</li>
+<li>Iniciar nuevamente la instancia</li>
+</ul>
+
+
+            </main>
+            <footer>
+                
+<p class="taxonomies">
+
+
+<a href="/tags/amazon">#Amazon</a>
+
+<a href="/tags/ec2">#EC2</a>
+
+<a href="/tags/gnu-linux">#Gnu&#x2F;Linux</a>
+
+
+
+<a href="/categories/infrastructure">+Infrastructure</a>
+
+
+
+
+</p>
+
+                
+            </footer>
+        </div>
+    </body>
+</html>
+        

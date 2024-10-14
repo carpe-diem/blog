@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Alberto Paparelli - Blog</title>
+    <subtitle>Personal Blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.paparelli.com.ar/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.paparelli.com.ar"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2013-11-04T00:00:00+00:00</updated>
+    <id>https://blog.paparelli.com.ar/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Permission denied en aws</title>
+        <published>2013-11-04T00:00:00+00:00</published>
+        <updated>2013-11-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.paparelli.com.ar/amazon-permission-denied-publickey/"/>
+        <id>https://blog.paparelli.com.ar/amazon-permission-denied-publickey/</id>
+        
+        <content type="html" xml:base="https://blog.paparelli.com.ar/amazon-permission-denied-publickey/">&lt;p&gt;El otro día tenía que hacer un deploy de una aplicación en el servidor de un cliente en amazon.
+Al intentar acceder por ssh, recibía como respuesta &quot;Permission denied (publickey)&quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;No podía acceder de ninguna otra manera. Tuve que hacer algunos pasos y pude solucionarlo.&lt;&#x2F;p&gt;
+&lt;p&gt;Mi problema era que alguien cambio los permisos del home, incluyendo el directorio ~&#x2F;.ssh&#x2F;.&lt;&#x2F;p&gt;
+&lt;p&gt;Les paso como lo solucione.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Parar la instancia.&lt;&#x2F;li&gt;
+&lt;li&gt;Ir a Volumes, encontrar el disco de la instancia con problemas y poner &quot;dettach&quot;.&lt;&#x2F;li&gt;
+&lt;li&gt;Si no tenes otra instancia, crear una micro instancia y poner attach volume.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;amazon-permission-denied-publickey.png&quot; alt=&quot;Amazon Permission denied (publickey)&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;El disco ya esta montado en la nueva instancia, así que podes debugear hasta encontrar el problema.&lt;&#x2F;li&gt;
+&lt;li&gt;Dettach de la nueva instancia.&lt;&#x2F;li&gt;
+&lt;li&gt;Attach a la instancia vieja. En este caso, el punto de montaje debe ser &#x2F;dev&#x2F;sda1 (como estaba antes).&lt;&#x2F;li&gt;
+&lt;li&gt;Iniciar nuevamente la instancia&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Aplicaciones para servidor de Conectar Igualdad</title>
+        <published>2013-10-29T00:00:00+00:00</published>
+        <updated>2013-10-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.paparelli.com.ar/aplicaciones-para-servidor-de-conectar-igualdad/"/>
+        <id>https://blog.paparelli.com.ar/aplicaciones-para-servidor-de-conectar-igualdad/</id>
+        
+        <content type="html" xml:base="https://blog.paparelli.com.ar/aplicaciones-para-servidor-de-conectar-igualdad/">&lt;p&gt;Ya esta libera el CD de instalación para los servidores del plan Conectar Igualdad.&lt;&#x2F;p&gt;
+&lt;p&gt;Este proyecto, lo realizamos cuando trabajaba en la Coopetativa de Trabajo &lt;a href=&quot;https:&#x2F;&#x2F;www.devecoop.com&#x2F;&quot;&gt;Devecoop&lt;&#x2F;a&gt; Ltda. Surgio de la necesidad de las escuelas, de tener
+disponible en la intranet de los colegios aplicaciones como wordpress, Moodle, etc. Pero como no todas las escuelas tienen
+internet, se tuvo que buscar otra solución.&lt;&#x2F;p&gt;
+&lt;p&gt;El CD se va a repartir en las escuelas oficialmente, pero desconozco cuando.&lt;&#x2F;p&gt;
+&lt;p&gt;Uno de los puntos que tuvimos que resolver es que el administrador del servidor, no tiene permisos para instalar paquetes en la virtual,
+asi que no podiamos usar herramientas como pyGTK. Esto lo solucionamos incorporando pyzenity en el código.&lt;&#x2F;p&gt;
+&lt;p&gt;En esta versión libre, incorporo la aplicación &lt;a href=&quot;http:&#x2F;&#x2F;www.proyectoalba.com.ar&#x2F;&quot;&gt;ALBA&lt;&#x2F;a&gt; que es un Sistema Informático Abierto de Gestión Unificada para Unidades Educacionales.
+En la versión oficial, nos pidieron que la saquemos, asi que solo esta en esta versión libre.&lt;&#x2F;p&gt;
+&lt;p&gt;El código esta disponible en &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;carpe-diem&#x2F;conectar-igualdad-server-apps&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Una vez que se eligen y se instalan las aplicaciones, estas estan disponibles en la url del servidor de apps. Tambíen ahí estan los manuales.&lt;&#x2F;p&gt;
+&lt;p&gt;Link directo a la guia de instalación &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;carpe-diem&#x2F;conectar-igualdad-server-apps&#x2F;raw&#x2F;master&#x2F;manuales&#x2F;Instalacion.pdf&quot;&gt;Instalación&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Link directo al &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;carpe-diem&#x2F;conectar-igualdad-server-apps&#x2F;raw&#x2F;master&#x2F;manuales&#x2F;detalles_aplicaciones.pdf&quot;&gt;detalle de aplicaciones&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
