@@ -22,9 +22,3 @@ zola serve
 ## Documentation
 
 https://www.getzola.org/documentation/getting-started/installation/
-
-
-TODO:
-
-- Migrate posts
-- Add github action to build

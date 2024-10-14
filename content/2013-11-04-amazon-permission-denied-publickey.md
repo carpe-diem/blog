@@ -19,13 +19,13 @@ Mi problema era que alguien cambio los permisos del home, incluyendo el director
 
 Les paso como lo solucione.
 
-* Parar la instancia.
-* Ir a Volumes, encontrar el disco de la instancia con problemas y poner "dettach".
-* Si no tenes otra instancia, crear una micro instancia y poner attach volume.
+- Parar la instancia.
+- Ir a Volumes, encontrar el disco de la instancia con problemas y poner "dettach".
+- Si no tenes otra instancia, crear una micro instancia y poner attach volume.
 
 {{ iimg(src="/images/amazon-permission-denied-publickey.png", alt="Amazon Permission denied (publickey)") }}
 
-* El disco ya esta montado en la nueva instancia, así que podes debugear hasta encontrar el problema.
-* Dettach de la nueva instancia.
-* Attach a la instancia vieja. En este caso, el punto de montaje debe ser /dev/sda1 (como estaba antes).
-* Iniciar nuevamente la instancia
+- El disco ya esta montado en la nueva instancia, así que podes debugear hasta encontrar el problema.
+- Dettach de la nueva instancia.
+- Attach a la instancia vieja. En este caso, el punto de montaje debe ser /dev/sda1 (como estaba antes).
+- Iniciar nuevamente la instancia
