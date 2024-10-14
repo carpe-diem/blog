@@ -1,4 +1,0 @@
-Sitemap: https://blog.paparelli.com.ar/sitemapindex.xml
-
-User-Agent: *
-Host: blog.paparelli.com.ar
