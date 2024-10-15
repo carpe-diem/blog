@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://blog.paparelli.com.ar/"
-title = "Alberto Paparelli - Blog"
-description = "Personal Blog"
+title = "Jugando a Carpediem"
+description = "Alberto Paparelli's personal blog"
 default_language = "en"
 
 theme = "no-style-please"
@@ -47,21 +47,12 @@ include_content = true
 index_format = "elasticlunr_javascript"
 
 [extra]
-trailing_slash = true
+# trailing_slash = true
 # Put all your custom variables here
 author = "Alberto Paparelli"
 list_pages = true
-no_list_date = true
+# no_list_date = true
 twitter_card = true
-[slugify]
-paths = "on"
-taxonomies = "on"
-anchors = "on"
-# Whether to remove date prefixes for page path slugs.
-# For example, content/posts/2016-10-08_a-post-with-dates.md => posts/a-post-with-dates
-# When true, content/posts/2016-10-08_a-post-with-dates.md => posts/2016-10-08-a-post-with-dates
-paths_keep_dates = false
-
 header_nav = [
     { name = "~home", url = "/" },
     { name = "#tags", url = "/tags" },
@@ -72,14 +63,21 @@ header_nav = [
     #{ name = "Github", url = "https://github.com/riggraz", new_tab=true },
     #{ name = "X", url = "https://x.com/carpedev", new_tab=true },
     #{ name = "Email", url = "mailto:alberto@paparelli.com.ar", new_tab=true },
-
-
 ]
 footer_nav = [
     { name = "< previous", url = "#" },
     { name = "webring", url = "#" },
     { name = "next >", url = "#" },
 ]
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+# Whether to remove date prefixes for page path slugs.
+# For example, content/posts/2016-10-08_a-post-with-dates.md => posts/a-post-with-dates
+# When true, content/posts/2016-10-08_a-post-with-dates.md => posts/2016-10-08-a-post-with-dates
+paths_keep_dates = false
+
 
 
 [translations]
