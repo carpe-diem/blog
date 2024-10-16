@@ -30,8 +30,9 @@ highlight_code = true
 # Put all your custom variables here
 author = "Alberto Paparelli"
 list_pages = true
-# no_list_date = true
+no_list_date = false
 twitter_card = true
+
 header_nav = [
     { name = "~home", url = "/" },
     { name = "#tags", url = "/tags" },
