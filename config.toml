@@ -51,7 +51,7 @@ index_format = "elasticlunr_javascript"
 # Put all your custom variables here
 author = "Alberto Paparelli"
 list_pages = true
-# no_list_date = true
+no_list_date = true
 twitter_card = true
 header_nav = [
     { name = "~home", url = "/" },
