@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Jugando a Carpediem</title>
+    <subtitle>Alberto Paparelli&#x27;s personal blog</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.paparelli.com.ar/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.paparelli.com.ar/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2019-10-20T00:00:00+00:00</updated>
+    <id>https://blog.paparelli.com.ar/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Corrector ortográfico para Vim</title>
+        <published>2019-10-20T00:00:00+00:00</published>
+        <updated>2019-10-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.paparelli.com.ar/2019-10-20-corrector-ortografico-para-vim/"/>
+        <id>https://blog.paparelli.com.ar/2019-10-20-corrector-ortografico-para-vim/</id>
+        
+        <content type="html" xml:base="https://blog.paparelli.com.ar/2019-10-20-corrector-ortografico-para-vim/">&lt;p&gt;Los que me conocen, o trabajaron conmigo saben que me gusta mucho la consola, ya que me resulta más cómodo y rápido para trabajar.
+Y además utilizo vim para programar.&lt;&#x2F;p&gt;
+&lt;p&gt;Cuando comence a probar nikola para el blog, me gusto la idea de poder escribir los posts en vim, pero me resultaba tedioso revisar si me faltaba algun acento, o si se pasaba alguna falta de ortografía.&lt;&#x2F;p&gt;
+&lt;p&gt;Así fue como llegue a esta funcionalidad de vim :)&lt;&#x2F;p&gt;
+&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;corrector-ortografico-para-vim-1.png&quot; alt=&quot;Corrector ortográfico para Vim&quot; &#x2F;&gt;&lt;h3 id=&quot;spell&quot;&gt;Spell&lt;&#x2F;h3&gt;
+&lt;p&gt;El soporte para el corrector ortográfico se agrego en Vim 7.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;configuracion&quot;&gt;Configuración&lt;&#x2F;h3&gt;
+&lt;p&gt;El comando para habilitarlo es::&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;:set spell
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Para habilitarlo en ingles::&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;:set spell spelllang=en_us
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Para habilitarlo en español, primero hay que descargar el diccionario::&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;# cd &#x2F;usr&#x2F;share&#x2F;vim&#x2F;vim81&#x2F;spell&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;# wget http:&#x2F;&#x2F;ftp.vim.org&#x2F;vim&#x2F;runtime&#x2F;spell&#x2F;es.utf-8.spl
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Luego habilitarlo::&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;:set spell spelllang=es
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Una vez habilitado, se marcaran los errores y las sugerencias de sintaxis. Situados en modo visual sobre la palabra con error, al escribir &lt;code&gt;z=&lt;&#x2F;code&gt;, saldrá una lista de palabras recomendadas para su reemplazo.&lt;&#x2F;p&gt;
+&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;corrector-ortografico-para-vim-2.png&quot; alt=&quot;Corrector ortográfico para Vim&quot; &#x2F;&gt;
+&lt;p&gt;Dejo una lista de las opciones mas utilizadas, y un enlace a la &lt;a href=&quot;http:&#x2F;&#x2F;vimdoc.sourceforge.net&#x2F;htmldoc&#x2F;spell.html&quot;&gt;documentación oficial&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[s&lt;&#x2F;code&gt;  Ir al próximo error.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;]s&lt;&#x2F;code&gt;  Ir al error anterior.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;zg&lt;&#x2F;code&gt;  Agrega la palabra al diccionario.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;zug&lt;&#x2F;code&gt; Elimina la palabra del diccionario.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;z=&lt;&#x2F;code&gt;  Despliega lista de opciones para reemplazar la palabra.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Problemas con Notebook Dell (Extraño la Thinkpad)</title>
+        <published>2019-10-18T00:00:00+00:00</published>
+        <updated>2019-10-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.paparelli.com.ar/2019-10-18-problemas-con-notebook-dell-extrano-la-thinkpad/"/>
+        <id>https://blog.paparelli.com.ar/2019-10-18-problemas-con-notebook-dell-extrano-la-thinkpad/</id>
+        
+        <content type="html" xml:base="https://blog.paparelli.com.ar/2019-10-18-problemas-con-notebook-dell-extrano-la-thinkpad/">&lt;p&gt;Hace un tiempo tuve que comprar una nueva notebook. Mi Thinkpad T430 ya estaba bastante obsoleta.&lt;&#x2F;p&gt;
+&lt;p&gt;Por un tema de precios, tuve que desistir que seguir con la línea de Lenovo, y opte por una Dell (Dell G3)&lt;&#x2F;p&gt;
+&lt;p&gt;Instale Archlinux y lo configure como siempre, y aunque tuve algunos problemas que solucionar por la compatibilidad de Dell con linux
+(Por ejemplo, la placa de video), había un solo problema que me volvía loco, que era cuando cerraba la notebook y pasaba a estado sleep.&lt;&#x2F;p&gt;
+&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;problemas-con-notebook-dell-extrano-la-thinkpad.png&quot; alt=&quot;Dell G3&quot; &#x2F;&gt;
+&lt;p&gt;El problema es que al &quot;despertarla&quot;, el touchpad no respondía. Encontré que volviendo a cargar el módulo &lt;code&gt;i2c_hid&lt;&#x2F;code&gt; volvía a funcionar&lt;&#x2F;p&gt;
+&lt;p&gt;el Touchpad, así que al principio dejaba una consola abierta para hacer &lt;code&gt;modprobe -r i2c_hid&lt;&#x2F;code&gt; y &lt;code&gt;modprobe i2c_hid&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Luego de unos días, lo solucione definitivamente. Por una lado  agregue &lt;code&gt;i2c_hid&lt;&#x2F;code&gt; en &lt;code&gt;&#x2F;etc&#x2F;suspend-modules.conf&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Luego cree el archivo &lt;code&gt;&#x2F;usr&#x2F;lib&#x2F;systemd&#x2F;system-sleep&#x2F;suspend-modules&lt;&#x2F;code&gt; con lo siguiente.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    #!&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    case $1 in
+&lt;&#x2F;span&gt;&lt;span&gt;        pre)
+&lt;&#x2F;span&gt;&lt;span&gt;            for mod in $(&amp;lt;&#x2F;etc&#x2F;suspend-modules.conf); do
+&lt;&#x2F;span&gt;&lt;span&gt;                modprobe -r $mod
+&lt;&#x2F;span&gt;&lt;span&gt;            done
+&lt;&#x2F;span&gt;&lt;span&gt;        ;;
+&lt;&#x2F;span&gt;&lt;span&gt;        post)
+&lt;&#x2F;span&gt;&lt;span&gt;            for mod in $(&amp;lt;&#x2F;etc&#x2F;suspend-modules.conf); do
+&lt;&#x2F;span&gt;&lt;span&gt;                modprobe $mod
+&lt;&#x2F;span&gt;&lt;span&gt;            done
+&lt;&#x2F;span&gt;&lt;span&gt;        ;;
+&lt;&#x2F;span&gt;&lt;span&gt;    esac
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>ScrumBut, pero peor (Mucho peor)</title>
+        <published>2016-01-03T00:00:00+00:00</published>
+        <updated>2016-01-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.paparelli.com.ar/2016-01-03-scrumbut-pero-peor-mucho-peor/"/>
+        <id>https://blog.paparelli.com.ar/2016-01-03-scrumbut-pero-peor-mucho-peor/</id>
+        
+        <content type="html" xml:base="https://blog.paparelli.com.ar/2016-01-03-scrumbut-pero-peor-mucho-peor/">&lt;p&gt;Hasta hace unos meses participe de un proyecto bastante grande. El proyecto era para un cliente de Estados Unidos,  donde uno de los socios era nativo y el otro era un Argentino viviendo allá desde hace unos cuantos años.&lt;&#x2F;p&gt;
+&lt;p&gt;Estuve trabajando unos 2 años desde Argentina, de manera freelance y mi contacto diario era con el Argentino (Product Owner).&lt;&#x2F;p&gt;
+&lt;p&gt;El proyecto desde que empece hasta que me fui, tenía cambios radicales cada 2 meses, nunca estuvo definido hacia donde íbamos,
+y se iba definiendo sobre la marcha.&lt;&#x2F;p&gt;
+&lt;p&gt;Esto lo hacia un proyecto perfecto para implementar Scrum, ya que era un sistema complejo, donde equivocarnos temprano era lo mejor
+que nos podía pasar, podríamos haber tenido un crecimiento orgánico y salir a producción rápido.&lt;&#x2F;p&gt;
+&lt;p&gt;Utilizamos Scrum, pero mal, muy mal.
+Scrum te hace ver los problemas en los procesos, hacen que salgan a la luz, y esto es lo bueno del framework, ya que te da la posibilidad de corregirlos a tiempo. Pero en este caso no fue así, donde se visibilizaban los problemas, se optaba por modificar el framework (de ahí ScrumBut).&lt;&#x2F;p&gt;
+&lt;p&gt;Estos son algunos de los problemas que identifico en mi propia retrospectiva post-proyecto...&lt;&#x2F;p&gt;
+&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;scrumbut.png&quot; alt=&quot;ScrumBut&quot; &#x2F;&gt;&lt;h2 id=&quot;nunca-salir-a-produccion&quot;&gt;Nunca salir a producción&lt;&#x2F;h2&gt;
+&lt;p&gt;Uno de los puntos por los que (en mi opinión) el proyecto fallo, es que para el Product Owner, el sistema nunca estaba listo.
+Varias veces insistí con la necesidad de salir a producción, y así empezar a tener feedback, ya sea para mejorar o para cambiar el rumbo, pero por mas que se llegaban a los objetivos para el release, el último día aparecían cambios radicales, los cuales demoraban la salida 2 meses más.
+Esto se repitió durante toda mi participación en el proyecto.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;sprint-backlog-variable&quot;&gt;Sprint Backlog &quot;variable&quot;&lt;&#x2F;h2&gt;
+&lt;p&gt;Una de las &quot;reglas&quot; del framework, es definir el tiempo de duración de los sprints, y limitarse a realizar las tareas del sprint Backlog.
+Con este proyecto, era imposible entender para el cliente, ya que llego a agregar tareas al sprint incluso 1 día después de definirlo y comenzar a trabajar.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;mirada-taylorista-del-desarrollo&quot;&gt;Mirada Taylorista del desarrollo&lt;&#x2F;h2&gt;
+&lt;p&gt;Estas costumbres son las más difíciles de cambiar.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;reporte-de-horas&quot;&gt;Reporte de horas&lt;&#x2F;h2&gt;
+&lt;p&gt;La insistencia en la carga de horas antes y después de realizada la tarea es algo aburrido y agobiante. Yo prefiero estimar por puntos, ya que las horas no
+me dicen nada. No se pueden utilizar para prever cuanto tiempo se tardara en otras tareas, en otra etapa del desarrollo. En cambio, con puntos, si se puede medir
+la cantidad que el equipo puede realizar por iteración.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;equipos-distribuidos&quot;&gt;Equipos distribuidos&lt;&#x2F;h2&gt;
+&lt;p&gt;Si bien a mi me conviene hablar bien de equipos distribuidos, tengo que admitir que no es lo mejor. Es totalmente distinto el compromiso como equipo, y los lazos que se crean al estar todos bajo un mismo techo.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cliente&quot;&gt;Cliente&lt;&#x2F;h2&gt;
+&lt;p&gt;Y acá podría hablar mucho, pero prefiero decir simplemente que hay clientes para todos los gustos ;)&lt;&#x2F;p&gt;
+&lt;p&gt;Yo deje el proyecto en Agosto del 2015, entre los varios motivos, uno fue el desgaste, que podría haberse evitado si hubiéramos aplicado Scrum de la manera correcta.&lt;&#x2F;p&gt;
+&lt;p&gt;Entre mis errores, me hago cargo, debería haber insistido más en aplicar el framework, poner más límites, insistir, ser el Agente de cambio.&lt;&#x2F;p&gt;
+&lt;p&gt;Al día de la fecha, la aplicación sigue sin estar productiva y aprovecho para hacer el descargo, aún me deben 2 meses de trabajo :(&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>PyCon-AR 2014</title>
+        <published>2014-11-17T00:00:00+00:00</published>
+        <updated>2014-11-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.paparelli.com.ar/2014-11-17-pycon-ar-2014/"/>
+        <id>https://blog.paparelli.com.ar/2014-11-17-pycon-ar-2014/</id>
+        
+        <content type="html" xml:base="https://blog.paparelli.com.ar/2014-11-17-pycon-ar-2014/">&lt;p&gt;Paso otra PyCon en Argentina, la sexta. Esta vez fue en Rafaela, Santa Fe.&lt;&#x2F;p&gt;
+&lt;p&gt;Llegamos el Jueves a la tarde, por lo que ese día solo participe del sprint de la nueva web de pyar. Hice unos commits, pero no hubo mucho tiempo como para poder  aportar mas.&lt;&#x2F;p&gt;
+&lt;p&gt;El Viernes y Jueves fueron de charlas. Entre las que más me gustaron estan:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tu propio cliente de Torrent streaming en Python (Por Felipe Lerena y Gilgameth)&lt;&#x2F;li&gt;
+&lt;li&gt;Django Security quick-wins (Por Andrés Riancho)&lt;&#x2F;li&gt;
+&lt;li&gt;Prediciendo el mundial con inteligencia artificial (Por Juan Pedro Fisanotti)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;pyconar2014.jpg&quot; alt=&quot;Foto grupal PyCon-AR 2014&quot; &#x2F;&gt;
+&lt;p&gt;De las charlas relámpago, me gusto mucho el cuento de Juanjo Conti, que me hizo acordar mucho al estilo de Hernán Casciari.&lt;&#x2F;p&gt;
+&lt;p&gt;Con respecto al lugar (Rafaela), es lindo, aunque hay muy poco para hacer y recorrer.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Incursionando en los embutidos</title>
+        <published>2013-12-28T00:00:00+00:00</published>
+        <updated>2013-12-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.paparelli.com.ar/2013-12-28-incursionando-en-los-embutidos/"/>
+        <id>https://blog.paparelli.com.ar/2013-12-28-incursionando-en-los-embutidos/</id>
+        
+        <content type="html" xml:base="https://blog.paparelli.com.ar/2013-12-28-incursionando-en-los-embutidos/">&lt;p&gt;Una de las tantas cosas que me gusta hacer como pasatiempo es cocinar, y hace mucho tiempo que tenia ganas de empezar a probar con los fiambres caseros.&lt;&#x2F;p&gt;
+&lt;p&gt;Busque un poco en Internet, y encontré la bondiola, la cual parece ser uno de los embutidos más fáciles para hacer.&lt;&#x2F;p&gt;
+&lt;p&gt;La hice, y salio muy bien, Así que ahora tengo ganas de hacer otros embutidos como Jamón Crudo y Quesos, y obviamente, otra bondiola, porque ya la comimos.&lt;&#x2F;p&gt;
+&lt;p&gt;Así quedo la bondiolita casera.&lt;&#x2F;p&gt;
+&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;bondiola_casera.png&quot; alt=&quot;Bondiolita casera&quot; &#x2F;&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Permission denied en aws</title>
+        <published>2013-11-04T00:00:00+00:00</published>
+        <updated>2013-11-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.paparelli.com.ar/2013-11-04-amazon-permission-denied-publickey/"/>
+        <id>https://blog.paparelli.com.ar/2013-11-04-amazon-permission-denied-publickey/</id>
+        
+        <content type="html" xml:base="https://blog.paparelli.com.ar/2013-11-04-amazon-permission-denied-publickey/">&lt;p&gt;El otro día tenía que hacer un deploy de una aplicación en el servidor de un cliente en amazon.
+Al intentar acceder por ssh, recibía como respuesta &quot;Permission denied (publickey)&quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;No podía acceder de ninguna otra manera. Tuve que hacer algunos pasos y pude solucionarlo.&lt;&#x2F;p&gt;
+&lt;p&gt;Mi problema era que alguien cambio los permisos del home, incluyendo el directorio ~&#x2F;.ssh&#x2F;.&lt;&#x2F;p&gt;
+&lt;p&gt;Les paso como lo solucione.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Parar la instancia.&lt;&#x2F;li&gt;
+&lt;li&gt;Ir a Volumes, encontrar el disco de la instancia con problemas y poner &quot;dettach&quot;.&lt;&#x2F;li&gt;
+&lt;li&gt;Si no tenes otra instancia, crear una micro instancia y poner attach volume.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;amazon-permission-denied-publickey.png&quot; alt=&quot;Amazon Permission denied (publickey)&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;El disco ya esta montado en la nueva instancia, así que podes debugear hasta encontrar el problema.&lt;&#x2F;li&gt;
+&lt;li&gt;Dettach de la nueva instancia.&lt;&#x2F;li&gt;
+&lt;li&gt;Attach a la instancia vieja. En este caso, el punto de montaje debe ser &#x2F;dev&#x2F;sda1 (como estaba antes).&lt;&#x2F;li&gt;
+&lt;li&gt;Iniciar nuevamente la instancia&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Aplicaciones para servidor de Conectar Igualdad</title>
+        <published>2013-10-29T00:00:00+00:00</published>
+        <updated>2013-10-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.paparelli.com.ar/2013-10-29-aplicaciones-para-servidor-de-conectar-igualdad/"/>
+        <id>https://blog.paparelli.com.ar/2013-10-29-aplicaciones-para-servidor-de-conectar-igualdad/</id>
+        
+        <content type="html" xml:base="https://blog.paparelli.com.ar/2013-10-29-aplicaciones-para-servidor-de-conectar-igualdad/">&lt;p&gt;Ya esta libera el CD de instalación para los servidores del plan Conectar Igualdad.&lt;&#x2F;p&gt;
+&lt;p&gt;Este proyecto, lo realizamos cuando trabajaba en la Coopetativa de Trabajo &lt;a href=&quot;https:&#x2F;&#x2F;www.devecoop.com&#x2F;&quot;&gt;Devecoop&lt;&#x2F;a&gt; Ltda. Surgio de la necesidad de las escuelas, de tener
+disponible en la intranet de los colegios aplicaciones como wordpress, Moodle, etc. Pero como no todas las escuelas tienen
+internet, se tuvo que buscar otra solución.&lt;&#x2F;p&gt;
+&lt;p&gt;El CD se va a repartir en las escuelas oficialmente, pero desconozco cuando.&lt;&#x2F;p&gt;
+&lt;p&gt;Uno de los puntos que tuvimos que resolver es que el administrador del servidor, no tiene permisos para instalar paquetes en la virtual,
+asi que no podiamos usar herramientas como pyGTK. Esto lo solucionamos incorporando pyzenity en el código.&lt;&#x2F;p&gt;
+&lt;p&gt;En esta versión libre, incorporo la aplicación &lt;a href=&quot;http:&#x2F;&#x2F;www.proyectoalba.com.ar&#x2F;&quot;&gt;ALBA&lt;&#x2F;a&gt; que es un Sistema Informático Abierto de Gestión Unificada para Unidades Educacionales.
+En la versión oficial, nos pidieron que la saquemos, asi que solo esta en esta versión libre.&lt;&#x2F;p&gt;
+&lt;p&gt;El código esta disponible en &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;carpe-diem&#x2F;conectar-igualdad-server-apps&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Una vez que se eligen y se instalan las aplicaciones, estas estan disponibles en la url del servidor de apps. Tambíen ahí estan los manuales.&lt;&#x2F;p&gt;
+&lt;p&gt;Link directo a la guia de instalación &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;carpe-diem&#x2F;conectar-igualdad-server-apps&#x2F;raw&#x2F;master&#x2F;manuales&#x2F;Instalacion.pdf&quot;&gt;Instalación&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Link directo al &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;carpe-diem&#x2F;conectar-igualdad-server-apps&#x2F;raw&#x2F;master&#x2F;manuales&#x2F;detalles_aplicaciones.pdf&quot;&gt;detalle de aplicaciones&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>PyCon-AR 2013</title>
+        <published>2013-10-29T00:00:00+00:00</published>
+        <updated>2013-10-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.paparelli.com.ar/2013-10-29-pycon-ar-2013/"/>
+        <id>https://blog.paparelli.com.ar/2013-10-29-pycon-ar-2013/</id>
+        
+        <content type="html" xml:base="https://blog.paparelli.com.ar/2013-10-29-pycon-ar-2013/">&lt;p&gt;El jueves 24 y viernes 25 de octubre estuve en Pycon Argentina. Este año se realizo en rosario y estuvo muy interesante.&lt;&#x2F;p&gt;
+&lt;p&gt;Es el 5° año consecutivo que se realiza en Argentina. el Año pasado se realizo en Quilmes y pude participar ayudando en la organización.&lt;&#x2F;p&gt;
+&lt;p&gt;Pueden ver las fotos en la &lt;a href=&quot;http:&#x2F;&#x2F;python.org.ar&#x2F;Eventos&#x2F;Conferencias&#x2F;PyConAr2013&quot;&gt;wiki&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;pycon2013.jpg&quot; alt=&quot;Foto grupal PyCon-AR 2013&quot; &#x2F;&gt;
+&lt;p&gt;Entre las charlas que más me gustaron o me sirvieron están:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Análisis de datos con Pandas por Franco Mariluis.&lt;&#x2F;li&gt;
+&lt;li&gt;Caching para hordas y estampidas por Claudio Freire.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Otra charla muy interesante fue &quot;La pythonicidad al palo&quot; por Martín Gaitán.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
