@@ -27,7 +27,9 @@
 Y además utilizo vim para programar.&lt;&#x2F;p&gt;
 &lt;p&gt;Cuando comence a probar nikola para el blog, me gusto la idea de poder escribir los posts en vim, pero me resultaba tedioso revisar si me faltaba algun acento, o si se pasaba alguna falta de ortografía.&lt;&#x2F;p&gt;
 &lt;p&gt;Así fue como llegue a esta funcionalidad de vim :)&lt;&#x2F;p&gt;
-&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;corrector-ortografico-para-vim-1.png&quot; alt=&quot;Corrector ortográfico para Vim&quot; &#x2F;&gt;&lt;h3 id=&quot;spell&quot;&gt;Spell&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img class=&quot;invertable&quot;   &#x2F;&gt;
+&lt;img src=&quot;&#x2F;images&#x2F;corrector-ortografico-para-vim-1.png&quot; alt=&quot;&amp;quot;Corrector ortográfico para Vim&amp;quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;spell&quot;&gt;Spell&lt;&#x2F;h3&gt;
 &lt;p&gt;El soporte para el corrector ortográfico se agrego en Vim 7.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;configuracion&quot;&gt;Configuración&lt;&#x2F;h3&gt;
 &lt;p&gt;El comando para habilitarlo es::&lt;&#x2F;p&gt;
@@ -76,7 +78,7 @@ Y además utilizo vim para programar.&lt;&#x2F;p&gt;
 &lt;p&gt;Por un tema de precios, tuve que desistir que seguir con la línea de Lenovo, y opte por una Dell (Dell G3)&lt;&#x2F;p&gt;
 &lt;p&gt;Instale Archlinux y lo configure como siempre, y aunque tuve algunos problemas que solucionar por la compatibilidad de Dell con linux
 (Por ejemplo, la placa de video), había un solo problema que me volvía loco, que era cuando cerraba la notebook y pasaba a estado sleep.&lt;&#x2F;p&gt;
-&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;problemas-con-notebook-dell-extrano-la-thinkpad.png&quot; alt=&quot;Dell G3&quot; &#x2F;&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;problemas-con-notebook-dell-extrano-la-thinkpad.png&quot; alt=&quot;&amp;quot;Dell G3&amp;quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;El problema es que al &quot;despertarla&quot;, el touchpad no respondía. Encontré que volviendo a cargar el módulo &lt;code&gt;i2c_hid&lt;&#x2F;code&gt; volvía a funcionar&lt;&#x2F;p&gt;
 &lt;p&gt;el Touchpad, así que al principio dejaba una consola abierta para hacer &lt;code&gt;modprobe -r i2c_hid&lt;&#x2F;code&gt; y &lt;code&gt;modprobe i2c_hid&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Luego de unos días, lo solucione definitivamente. Por una lado  agregue &lt;code&gt;i2c_hid&lt;&#x2F;code&gt; en &lt;code&gt;&#x2F;etc&#x2F;suspend-modules.conf&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
@@ -125,7 +127,8 @@ que nos podía pasar, podríamos haber tenido un crecimiento orgánico y salir a
 &lt;p&gt;Utilizamos Scrum, pero mal, muy mal.
 Scrum te hace ver los problemas en los procesos, hacen que salgan a la luz, y esto es lo bueno del framework, ya que te da la posibilidad de corregirlos a tiempo. Pero en este caso no fue así, donde se visibilizaban los problemas, se optaba por modificar el framework (de ahí ScrumBut).&lt;&#x2F;p&gt;
 &lt;p&gt;Estos son algunos de los problemas que identifico en mi propia retrospectiva post-proyecto...&lt;&#x2F;p&gt;
-&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;scrumbut.png&quot; alt=&quot;ScrumBut&quot; &#x2F;&gt;&lt;h2 id=&quot;nunca-salir-a-produccion&quot;&gt;Nunca salir a producción&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;scrumbut.png&quot; alt=&quot;&amp;quot;ScrumBut&amp;quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;nunca-salir-a-produccion&quot;&gt;Nunca salir a producción&lt;&#x2F;h2&gt;
 &lt;p&gt;Uno de los puntos por los que (en mi opinión) el proyecto fallo, es que para el Product Owner, el sistema nunca estaba listo.
 Varias veces insistí con la necesidad de salir a producción, y así empezar a tener feedback, ya sea para mejorar o para cambiar el rumbo, pero por mas que se llegaban a los objetivos para el release, el último día aparecían cambios radicales, los cuales demoraban la salida 2 meses más.
 Esto se repitió durante toda mi participación en el proyecto.&lt;&#x2F;p&gt;
@@ -172,7 +175,7 @@ la cantidad que el equipo puede realizar por iteración.&lt;&#x2F;p&gt;
 &lt;li&gt;Django Security quick-wins (Por Andrés Riancho)&lt;&#x2F;li&gt;
 &lt;li&gt;Prediciendo el mundial con inteligencia artificial (Por Juan Pedro Fisanotti)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;pyconar2014.jpg&quot; alt=&quot;Foto grupal PyCon-AR 2014&quot; &#x2F;&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;pyconar2014.jpg&quot; alt=&quot;&amp;quot;Foto grupal PyCon-AR 2014&amp;quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;De las charlas relámpago, me gusto mucho el cuento de Juanjo Conti, que me hizo acordar mucho al estilo de Hernán Casciari.&lt;&#x2F;p&gt;
 &lt;p&gt;Con respecto al lugar (Rafaela), es lindo, aunque hay muy poco para hacer y recorrer.&lt;&#x2F;p&gt;
 </content>
@@ -198,7 +201,8 @@ la cantidad que el equipo puede realizar por iteración.&lt;&#x2F;p&gt;
 &lt;p&gt;Busque un poco en Internet, y encontré la bondiola, la cual parece ser uno de los embutidos más fáciles para hacer.&lt;&#x2F;p&gt;
 &lt;p&gt;La hice, y salio muy bien, Así que ahora tengo ganas de hacer otros embutidos como Jamón Crudo y Quesos, y obviamente, otra bondiola, porque ya la comimos.&lt;&#x2F;p&gt;
 &lt;p&gt;Así quedo la bondiolita casera.&lt;&#x2F;p&gt;
-&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;bondiola_casera.png&quot; alt=&quot;Bondiolita casera&quot; &#x2F;&gt;</content>
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;bondiola_casera.png&quot; alt=&quot;&amp;quot;Bondiolita casera&amp;quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
         
     </entry>
     <entry xml:lang="en">
@@ -227,7 +231,7 @@ Al intentar acceder por ssh, recibía como respuesta &quot;Permission denied (pu
 &lt;li&gt;Ir a Volumes, encontrar el disco de la instancia con problemas y poner &quot;dettach&quot;.&lt;&#x2F;li&gt;
 &lt;li&gt;Si no tenes otra instancia, crear una micro instancia y poner attach volume.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;amazon-permission-denied-publickey.png&quot; alt=&quot;Amazon Permission denied (publickey)&quot; &#x2F;&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;amazon-permission-denied-publickey.png&quot; alt=&quot;&amp;quot;Amazon Permission denied (publickey)&amp;quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;El disco ya esta montado en la nueva instancia, así que podes debugear hasta encontrar el problema.&lt;&#x2F;li&gt;
 &lt;li&gt;Dettach de la nueva instancia.&lt;&#x2F;li&gt;
@@ -288,7 +292,7 @@ En la versión oficial, nos pidieron que la saquemos, asi que solo esta en esta 
         <content type="html" xml:base="https://blog.paparelli.com.ar/2013-10-29-pycon-ar-2013/">&lt;p&gt;El jueves 24 y viernes 25 de octubre estuve en Pycon Argentina. Este año se realizo en rosario y estuvo muy interesante.&lt;&#x2F;p&gt;
 &lt;p&gt;Es el 5° año consecutivo que se realiza en Argentina. el Año pasado se realizo en Quilmes y pude participar ayudando en la organización.&lt;&#x2F;p&gt;
 &lt;p&gt;Pueden ver las fotos en la &lt;a href=&quot;http:&#x2F;&#x2F;python.org.ar&#x2F;Eventos&#x2F;Conferencias&#x2F;PyConAr2013&quot;&gt;wiki&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;img class=&quot;invertable&quot; src=&quot;&amp;#x2F;images&amp;#x2F;pycon2013.jpg&quot; alt=&quot;Foto grupal PyCon-AR 2013&quot; &#x2F;&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;images&#x2F;pycon2013.jpg&quot; alt=&quot;&amp;quot;Foto grupal PyCon-AR 2013&amp;quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Entre las charlas que más me gustaron o me sirvieron están:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Análisis de datos con Pandas por Franco Mariluis.&lt;&#x2F;li&gt;

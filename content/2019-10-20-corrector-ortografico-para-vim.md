@@ -12,8 +12,8 @@ Cuando comence a probar nikola para el blog, me gusto la idea de poder escribir 
 
 Así fue como llegue a esta funcionalidad de vim :)
 
-{{ iimg(src="/images/corrector-ortografico-para-vim-1.png", alt="Corrector ortográfico para Vim") }}
-
+{{ iimg(src="", alt="") }}
+!["Corrector ortográfico para Vim"](/images/corrector-ortografico-para-vim-1.png)
 
 ### Spell
 

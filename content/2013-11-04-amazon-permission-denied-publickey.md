@@ -23,7 +23,7 @@ Les paso como lo solucione.
 - Ir a Volumes, encontrar el disco de la instancia con problemas y poner "dettach".
 - Si no tenes otra instancia, crear una micro instancia y poner attach volume.
 
-{{ iimg(src="/images/amazon-permission-denied-publickey.png", alt="Amazon Permission denied (publickey)") }}
+!["Amazon Permission denied (publickey)"](/images/amazon-permission-denied-publickey.png)
 
 - El disco ya esta montado en la nueva instancia, así que podes debugear hasta encontrar el problema.
 - Dettach de la nueva instancia.

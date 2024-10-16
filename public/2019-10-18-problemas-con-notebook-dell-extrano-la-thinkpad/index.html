@@ -112,7 +112,7 @@
 <p>Por un tema de precios, tuve que desistir que seguir con la línea de Lenovo, y opte por una Dell (Dell G3)</p>
 <p>Instale Archlinux y lo configure como siempre, y aunque tuve algunos problemas que solucionar por la compatibilidad de Dell con linux
 (Por ejemplo, la placa de video), había un solo problema que me volvía loco, que era cuando cerraba la notebook y pasaba a estado sleep.</p>
-<img class="invertable" src="&#x2F;images&#x2F;problemas-con-notebook-dell-extrano-la-thinkpad.png" alt="Dell G3" />
+<p><img src="/images/problemas-con-notebook-dell-extrano-la-thinkpad.png" alt="&quot;Dell G3&quot;" /></p>
 <p>El problema es que al "despertarla", el touchpad no respondía. Encontré que volviendo a cargar el módulo <code>i2c_hid</code> volvía a funcionar</p>
 <p>el Touchpad, así que al principio dejaba una consola abierta para hacer <code>modprobe -r i2c_hid</code> y <code>modprobe i2c_hid</code>.</p>
 <p>Luego de unos días, lo solucione definitivamente. Por una lado  agregue <code>i2c_hid</code> en <code>/etc/suspend-modules.conf</code>.</p>

@@ -12,4 +12,4 @@ La hice, y salio muy bien, Así que ahora tengo ganas de hacer otros embutidos c
 
 Así quedo la bondiolita casera.
 
-{{ iimg(src="/images/bondiola_casera.png", alt="Bondiolita casera") }}
+!["Bondiolita casera"](/images/bondiola_casera.png)

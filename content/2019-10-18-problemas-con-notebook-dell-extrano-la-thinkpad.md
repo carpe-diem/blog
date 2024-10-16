@@ -12,7 +12,7 @@ Por un tema de precios, tuve que desistir que seguir con la línea de Lenovo, y 
 Instale Archlinux y lo configure como siempre, y aunque tuve algunos problemas que solucionar por la compatibilidad de Dell con linux
 (Por ejemplo, la placa de video), había un solo problema que me volvía loco, que era cuando cerraba la notebook y pasaba a estado sleep.
 
-{{ iimg(src="/images/problemas-con-notebook-dell-extrano-la-thinkpad.png", alt="Dell G3") }}
+!["Dell G3"](/images/problemas-con-notebook-dell-extrano-la-thinkpad.png)
 
 El problema es que al "despertarla", el touchpad no respondía. Encontré que volviendo a cargar el módulo ``i2c_hid`` volvía a funcionar 
 

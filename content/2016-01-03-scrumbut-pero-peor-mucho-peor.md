@@ -21,7 +21,7 @@ Scrum te hace ver los problemas en los procesos, hacen que salgan a la luz, y es
 
 Estos son algunos de los problemas que identifico en mi propia retrospectiva post-proyecto...
 
-{{ iimg(src="/images/scrumbut.png", alt="ScrumBut") }}
+!["ScrumBut"](/images/scrumbut.png)
 
 ## Nunca salir a producción
 
