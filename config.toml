@@ -25,33 +25,12 @@ taxonomies = [
 [markdown]
 highlight_code = true
 
-[search]
-# Whether to include the title of the page/section in the index
-include_title = true
-# Whether to include the description of the page/section in the index
-include_description = false
-# Whether to include the RFC3339 datetime of the page in the search index
-include_date = false
-# Whether to include the path of the page/section in the index (the permalink is always included)
-include_path = false
-# Whether to include the rendered content of the page/section in the index
-include_content = true
-# At which code point to truncate the content to. Useful if you have a lot of pages and the index would
-# become too big to load on the site. Defaults to not being set.
-# truncate_content_length = 100
-
-# Wether to produce the search index as a javascript file or as a JSON file
-# Accepted values:
-# - "elasticlunr_javascript", "elasticlunr_json"
-# - "fuse_javascript", "fuse_json"
-index_format = "elasticlunr_javascript"
-
 [extra]
 # trailing_slash = true
 # Put all your custom variables here
 author = "Alberto Paparelli"
 list_pages = true
-no_list_date = true
+# no_list_date = true
 twitter_card = true
 header_nav = [
     { name = "~home", url = "/" },
@@ -69,6 +48,7 @@ footer_nav = [
     { name = "webring", url = "#" },
     { name = "next >", url = "#" },
 ]
+
 [slugify]
 paths = "on"
 taxonomies = "on"
@@ -76,7 +56,7 @@ anchors = "on"
 # Whether to remove date prefixes for page path slugs.
 # For example, content/posts/2016-10-08_a-post-with-dates.md => posts/a-post-with-dates
 # When true, content/posts/2016-10-08_a-post-with-dates.md => posts/2016-10-08-a-post-with-dates
-paths_keep_dates = false
+paths_keep_dates = true
 
 
 
